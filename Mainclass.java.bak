@@ -1,0 +1,25 @@
+class Demo
+{
+int x=10;
+}
+class Sample extends Demo
+{
+void disp()
+{
+System.out.println("cool");
+}
+}
+class Mainclass
+{
+public static void main(String[]args)
+{
+//upcasting
+Demo a=new Sample();
+Demo a=(Demo)new Sample();
+System.out.println(a.x);
+//downcasting
+Sample s=(Sample)a;
+s.disp();
+System.out.println(s.x);
+}
+}

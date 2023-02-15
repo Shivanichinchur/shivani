@@ -1,0 +1,47 @@
+class Univ
+{
+void study()
+{
+System.out.println("subject");
+}
+}
+class Civil extends Univ
+{
+void study()
+{
+System.out.println("book");
+}
+}
+class Cs extends Univ
+{
+void study()
+{
+System.out.println("book2");
+}
+}
+class Eee extends Univ
+{
+void study()
+{
+System.out.println("book3");
+}
+}
+class Sample
+{
+static void ansim(Univ u1)
+{ 
+u1.study();
+}
+}
+class Mainclass5
+{
+public static void main(String[] args)
+{
+Civil c1=new Civil();
+Cs c2=new Cs();
+Eee e1=new Eee();
+Sample.ansim(c1);
+Sample.ansim(c2);
+Sample.ansim(e1);
+}
+}

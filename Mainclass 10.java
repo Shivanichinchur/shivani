@@ -1,0 +1,24 @@
+abstract class Demo
+{
+abstract void test();
+abstract void disp();
+}
+class Sample extends Demo
+{
+void test()
+{
+System.out.println("hi");
+}
+abstract void disp();
+{
+System.out.println("hello");
+}
+class Mainclass 10
+{
+public static void main(String...args)
+{
+Sample s=new Sample();
+s.test();
+s.disp();
+}
+}
